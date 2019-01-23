@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Sarah Hsu Portfolio</title>
 
 <!-- Bootstrap CSS Link -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -16,71 +16,63 @@
       integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
       crossorigin="anonymous"
     />
+
+<!-- Google Font CSS Link -->
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 <!-- Custom CSS Link -->
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+<!-- NAVIGATION BAR -->
+
+<nav class="navbar sticky-top">
+    <a class="navbar-brand" href="#">SARAH HSU</a>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" href="About">ABOUT</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Projects">PROJECTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact">CONTACT</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">RESUME</a>
+          </li>
+    </ul>
+</nav>
  
-            
-  <!-- NAV FOR LG SCREENS  -->
-  <nav class="navbar">
-    <ul class="navbar-nav-left">
-    <li class="name-logo">SARAH HSU</li>
-    </ul>
-    <!-- <div class="navbar-brand">
-        <img src="https://via.placeholder.com/150x50" class="logo" alt="logo">
-    </div>
-      <ul>
-        <li class="name">SARAH HSU</li>
-      </ul> -->
-      <ul class="navbar-nav-right">
-          <li class="nav-item">
-              <a class="nav-link" href="#">Work</a>
-            </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Resume</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-</nav>
-
-<!-- NAV BAR FOR MED & SM SCREENS -->
-
-<nav class="navbar-responsive d-flex justify-content-between align-content-center">
-    <ul class="navbar-nav-left">
-    <li class="name-logo">Sarah Hsu</li>
-    </ul>
-    <div class="d-inline-flex align-items-center">
-        <i class="fas fa-bars fa-2x"></i>
-    </div>
-</nav>
-    
-
-
-</nav>  
    <!--Jumbotron-->
-   <div class="jumbotron text-center">
-       <h1 class="display-4">Hi, I'm Sarah Hsu</h1>
-       <p class="lead">UX/UI Designer based in Orange County</p>
-       <a class="btn btn-info btn-lg" href="#" role="button">Learn more</a>
-     </div>
+
+     <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <img src="images/Sarah Hsu.jpg" class="img-fluid" alt=SarahHsu>
+                </div>
+                <div class="col-sm-7">
+                    <h1 class="display-4">Hi, I'm Sarah Hsu</h1>
+                    <p class="lead">UX/UI Designer based in Orange County</p>
+
+                </div>
+                
+            </div>
+          </div>
+    </div>
 
    <!--Portfolio Cards-->
      <div class="container">
-       <h3 class="display-6 text-center">Projects</h3>
-       
+       <h3 class="display-6 text-center">PROJECTS</h3>
        <br>
        <br>
 
        <div class="row">
        <div class="col-sm-6">
-                   <img src="Images/Sarah Hsu.jpg" class="img-fluid" alt="project1-image">
+                   <img src="https://www.casamona.com/wp-content/uploads/2017/07/airbnb-768x512.jpg" class="img-fluid" alt="project1-image">
        </div>
            <div class="col-sm-6">
              <div class="card">
@@ -155,9 +147,39 @@
     <br>
          
    <!-- Footer -->
-    <footer class="footer-basic-centered">
+    <footer id="Contact" class="footer-basic-centered">
 
-			<p class="footer-contact-me">Contact Me</p>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" data-whatever="contactMe">Contact Me</button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Your Name:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
 
 			<p class="footer-links">
 				<a href="mailto:sarahhsu16@gmail.com" target="_blank">Email</a>
@@ -171,6 +193,18 @@
 			<p class="footer-copyright"> © 2019</p>
 
 		</footer>
+
+
+
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+ crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+ crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+ crossorigin="anonymous"></script>
+
+ <script src="javascript.js"></script>
 
 
 </body>
